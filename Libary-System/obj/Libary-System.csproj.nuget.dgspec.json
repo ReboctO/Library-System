@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ww224\\source\\repos\\Libray-System\\Libary-System\\Libary-System.csproj": {}
+    "C:\\Users\\ww224\\Desktop\\Library-System\\Libary-System\\Libary-System.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ww224\\source\\repos\\Libray-System\\Libary-System\\Libary-System.csproj": {
+    "C:\\Users\\ww224\\Desktop\\Library-System\\Libary-System\\Libary-System.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ww224\\source\\repos\\Libray-System\\Libary-System\\Libary-System.csproj",
+        "projectUniqueName": "C:\\Users\\ww224\\Desktop\\Library-System\\Libary-System\\Libary-System.csproj",
         "projectName": "Libary-System",
-        "projectPath": "C:\\Users\\ww224\\source\\repos\\Libray-System\\Libary-System\\Libary-System.csproj",
+        "projectPath": "C:\\Users\\ww224\\Desktop\\Library-System\\Libary-System\\Libary-System.csproj",
         "packagesPath": "C:\\Users\\ww224\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ww224\\source\\repos\\Libray-System\\Libary-System\\obj\\",
+        "outputPath": "C:\\Users\\ww224\\Desktop\\Library-System\\Libary-System\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ww224\\AppData\\Roaming\\NuGet\\NuGet.Config",

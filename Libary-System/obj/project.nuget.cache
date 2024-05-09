@@ -1,12 +1,35 @@
 {
   "version": 2,
-  "dgSpecHash": "A+C1mNDXgktm4YG/S14beniSvKWulVB3bNGKLVIXA7YaDjd7MzSGMwwHvqOECg3c0fnQ7eWKcsoXDav5pH1I1g==",
+  "dgSpecHash": "sbrnBNerlh9S+x1fjYfxpUdKCh5rD6UHfV7g4ArLWrm/xqpBHq8j3dKOnlsM48Gbma5tqrHiixezFyCIm7hkkw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ww224\\source\\repos\\Libray-System\\Libary-System\\Libary-System.csproj",
+  "projectFilePath": "C:\\Users\\ww224\\Desktop\\Library-System\\Libary-System\\Library-System.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ww224\\.nuget\\packages\\livecharts\\0.9.7\\livecharts.0.9.7.nupkg.sha512",
+    "C:\\Users\\ww224\\.nuget\\packages\\livecharts.wpf\\0.9.7\\livecharts.wpf.0.9.7.nupkg.sha512",
     "C:\\Users\\ww224\\.nuget\\packages\\materialdesigncolors\\3.0.0\\materialdesigncolors.3.0.0.nupkg.sha512",
     "C:\\Users\\ww224\\.nuget\\packages\\materialdesignthemes\\5.0.0\\materialdesignthemes.5.0.0.nupkg.sha512",
     "C:\\Users\\ww224\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'LiveCharts 0.9.7' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "LiveCharts",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'LiveCharts.Wpf 0.9.7' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "LiveCharts.Wpf",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    }
+  ]
 }

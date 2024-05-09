@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="http://materialdesigninxaml.net/winfx/xaml/themes"
+       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
         Height="645" 
         Width="875"
@@ -58,10 +58,10 @@
                         <RectangleGeometry Rect="0,0,400, 875"
                                            RadiusX="10"
                                            RadiusY="10"/>
-                        
+
                     </Border.Clip>
 
-                    <StackPanel Margin="0 120 0 0"
+                    <StackPanel Margin="0 180 0 0"
                                 VerticalAlignment="Top">
                         <TextBlock FontSize=" 35"
                                    FontWeight="Bold"
@@ -80,26 +80,125 @@
                                    Text="Discover a world of literature at your fingertips with Readify. Dive into a treasure trove of books, articles, and resources from the comfort of your own device."
                                    Foreground="#da34ae"
                                    Margin="50 60 50 0" 
-                                   Height="131" Width="299"/>
-
-
+                                   Height="131" Width="299"
+                                   TextWrapping="Wrap"
+                                   TextAlignment="Center"
+                                   />
                     </StackPanel>
 
                 </Border>
 
-                <Border Grid.Column="1"
-                        >
+                <Border Grid.Column="1">
                     <Grid>
-                        <materialDesign:PackIcon Kind="Close"/>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <StackPanel Orientation="Horizontal"
+                                    Grid.Row="0"
+                                    >
+                            <materialDesign:PackIcon 
+                                      Kind ="Minimize"
+                                      Width="20"
+                                      Height="20"
+                                      Opacity="0.3"
+                                      HorizontalAlignment="Center"
+                                      VerticalAlignment="center"
+                                      Background="#da34ae"
+                                BorderBrush="Black"
+                                BorderThickness="1"
+                                Margin="430,0,0,0"/>
+                            <materialDesign:PackIcon 
+                                        Kind ="Close"
+                                        Width="20"
+                                        Height="20"
+                                        Opacity="0.3"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="center"
+                                        Background="#da34ae"
+                                        BorderBrush="Black"
+ BorderThickness="1"/>
+                        </StackPanel>
+                       
+                        <StackPanel Grid.Row="1"
+                                    VerticalAlignment="Center"
+                                    Margin=" 75 0">
+                            <TextBlock Text="Username"
+                                       Foreground="#da34ae"
+                                       FontSize="20"
+                                       FontWeight="Medium"
+                                       FontFamily="Monteserrat"
+                                       />
+                            <TextBox 
+                                     BorderBrush="#da34ae"
+                                     BorderThickness="0,0,0,2"
+                                     Background="Transparent"
+                                     Foreground="#da34ae"
+                                     CaretBrush="LightGray"
+                                     Height="28"
+                                     VerticalContentAlignment="Center"
+                                     Margin="0,5,0,5"
+                                     />
+                            <TextBlock Text="Password"
+                                       Foreground="#da34ae"
+                                       FontSize="20"
+                                       FontWeight="Medium"
+                                       FontFamily="Monteserrat"
+                                       Height="28"
+                                       Margin="0 10 0 0"
+                                        />
+                            <PasswordBox
+                                          BorderBrush="#da34ae"
+                                          BorderThickness="0,0,0,2"
+                                          Background="Transparent"
+                                          Foreground="#da34ae"
+                                          CaretBrush="LightGray"
+                                          Height="28"
+                                          VerticalContentAlignment="Center"
+                                          Margin="0,5,0,5"
+                                          />
+                            <StackPanel Orientation="Horizontal"
+                                        Height="30"
+                                        Margin="0 10 0 0">
+                                        
+                                <TextBlock Text="Forgot Password ?  "
+                                           Foreground="#da34ae"
+                                           Margin="50 0 0 0"
+                                           HorizontalAlignment="Center"
+                                           VerticalAlignment="center"/>
+                                <TextBlock Text="Reset"
+                                           Foreground="#da34ae"
+                                           HorizontalAlignment="Center"
+VerticalAlignment="center"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal"
+                                        Height="40"
+                                        >
+                                <Button Background="#da34ae"
+                                        Content="Sign Up"
+                                        Width="165"
+                                        FontWeight="DemiBold"
+                                        BorderBrush="#1b1448"
+                                        BorderThickness="2"
+                                        
+                                        materialDesign:ButtonAssist.CornerRadius="15"/>
+                                <Button Background="#da34ae"
+                                          Content="Login"
+                                          Width="165"
+                                          FontWeight="DemiBold"
+                                          BorderBrush="#1b1448"
+                                          BorderThickness="2"/>   
+                            </StackPanel>
+                        </StackPanel>
                     </Grid>
-                    
+
                 </Border>
             </Grid>
 
-           
-            
+
+
         </Border>
 
     </Grid>
-    
+
 </Window>
