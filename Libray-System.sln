@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{EC8B98D0-DD51-466A-8324-074E9266414C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Libary-System", "Libary-System\Libary-System.csproj", "{3C414B24-7C91-45EF-ADB6-5B10E2A236EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C414B24-7C91-45EF-ADB6-5B10E2A236EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C414B24-7C91-45EF-ADB6-5B10E2A236EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C414B24-7C91-45EF-ADB6-5B10E2A236EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C414B24-7C91-45EF-ADB6-5B10E2A236EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3C414B24-7C91-45EF-ADB6-5B10E2A236EE} = {EC8B98D0-DD51-466A-8324-074E9266414C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {51F94FA1-0551-4CDD-BF28-9C509B0237D4}
+	EndGlobalSection
+EndGlobal
