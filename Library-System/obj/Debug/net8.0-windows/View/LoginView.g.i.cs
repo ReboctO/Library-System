@@ -55,7 +55,7 @@ namespace Libary_System.View {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Library-System;component/view/loginview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Library-System;V1.0.0.0;component/view/loginview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\View\LoginView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
