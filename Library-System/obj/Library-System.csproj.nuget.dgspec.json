@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\Library-System\\Library-System\\Library-System.csproj": {}
+    "C:\\Users\\ww224\\Desktop\\Library-System\\Library-System\\Library-System.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\Library-System\\Library-System\\Library-System.csproj": {
+    "C:\\Users\\ww224\\Desktop\\Library-System\\Library-System\\Library-System.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Library-System\\Library-System\\Library-System.csproj",
+        "projectUniqueName": "C:\\Users\\ww224\\Desktop\\Library-System\\Library-System\\Library-System.csproj",
         "projectName": "Library-System",
-        "projectPath": "C:\\Users\\User\\Desktop\\Library-System\\Library-System\\Library-System.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Library-System\\Library-System\\obj\\",
+        "projectPath": "C:\\Users\\ww224\\Desktop\\Library-System\\Library-System\\Library-System.csproj",
+        "packagesPath": "C:\\Users\\ww224\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ww224\\Desktop\\Library-System\\Library-System\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ww224\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,8 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://packagesource": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0-windows7.0": {
@@ -73,7 +72,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

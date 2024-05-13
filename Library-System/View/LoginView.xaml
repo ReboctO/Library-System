@@ -6,7 +6,7 @@
        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local ="clr-namespace:Libary_System.View"
         xmlns:viewModels="clr-namespace:Libary_System.ViewModels"
-        xmlns:customcontrols="clr-namspace:Libary_System.CustomControls"
+        xmlns:customcontrols="clr-namespace:Libary_System.CustomControls"
         mc:Ignorable="d"
         Height="645" 
         Width="875"
@@ -165,12 +165,11 @@
                                        Height="28"
                                        Margin="0 10 0 0"
                                         />
-                            <customcontrols:BindablePasswordBox Password="{Binding Password}"
-                                                Height="28"
-                                               Margin="0,5,0,0" 
-                                                                >
-                            </customcontrols:BindablePasswordBox>
-                            
+                                <customcontrols:BindablePasswordBox Password ="{Binding Password}" 
+                                    Height="28"
+                                    Margin="0 5 0 0" >
+                                
+                                </customcontrols:BindablePasswordBox>
                             <StackPanel Orientation="Horizontal"
                                         Height="30"
                                         Margin="0 10 0 0">
