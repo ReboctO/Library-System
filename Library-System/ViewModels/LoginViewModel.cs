@@ -66,12 +66,12 @@ namespace Libary_System.ViewModels
             RecoverPasswordCommand = new ViewModelCommand(p => ExecuteRecoverPassCommand("", ""));
         }
 
+        //Login Validation
         private bool CanExecuteLoginCommand(object obj)
         {
-            if (string.IsNullOrWhiteSpace(UserName) || (UserName.Length < 3 || Password == null || Password.Length < 3))
-                return false;
-            else
-                return true;
+            //either nilang username kay whitespace, username length less than 3 characters hasta ang password moreturn false dili sya ma unable sya 
+            return !(string.IsNullOrWhiteSpace(UserName) || (UserName.Length < 3 || Password == null || Password.Length < 3));
+
         }
         private void ExecuteLoginCommand(object obj)
         {

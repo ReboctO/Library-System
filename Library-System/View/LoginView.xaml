@@ -4,6 +4,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local ="clr-namespace:Libary_System.View"
+        xmlns:viewModels="clr-namespace:Libary_System.ViewModels"
+        xmlns:customcontrols="clr-namspace:Libary_System.CustomControls"
         mc:Ignorable="d"
         Height="645" 
         Width="875"
@@ -13,8 +16,22 @@
         Background="Transparent"
         ResizeMode="NoResize"
         FontSize="18"
-        MouseDown="Window_MouseDown"
-        >
+        MouseDown="Window_MouseDown">
+
+    <Window.DataContext>
+        <viewModels:LoginViewModel/>
+    </Window.DataContext>
+
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibility"/>
+    </Window.Resources>
+
+    <Window.Visibility>
+        <Binding Path="IsViewVisible" Mode="TwoWay" Converter="{StaticResource BooleanToVisibility}"/>
+    </Window.Visibility>
+
+
+
     <Grid >
 
         <Border CornerRadius="10"
@@ -118,7 +135,7 @@
                                         Background="#da34ae"
                                         BorderBrush="Black"
  BorderThickness="1"/>
-                        </StackPanel>
+                        </StackPanel> 
                        
                         <StackPanel Grid.Row="1"
                                     VerticalAlignment="Center"
@@ -129,7 +146,8 @@
                                        FontWeight="Medium"
                                        FontFamily="Monteserrat"
                                        />
-                            <TextBox 
+                            <TextBox x:Name="txtUser"
+                                     Text="{Binding UserName}"
                                      BorderBrush="#da34ae"
                                      BorderThickness="0,0,0,2"
                                      Background="Transparent"
@@ -137,7 +155,7 @@
                                      CaretBrush="LightGray"
                                      Height="28"
                                      VerticalContentAlignment="Center"
-                                     Margin="0,5,0,5"
+                                     Margin="0,5,0,5" 
                                      />
                             <TextBlock Text="Password"
                                        Foreground="#da34ae"
@@ -147,16 +165,12 @@
                                        Height="28"
                                        Margin="0 10 0 0"
                                         />
-                            <PasswordBox
-                                          BorderBrush="#da34ae"
-                                          BorderThickness="0,0,0,2"
-                                          Background="Transparent"
-                                          Foreground="#da34ae"
-                                          CaretBrush="LightGray"
-                                          Height="28"
-                                          VerticalContentAlignment="Center"
-                                          Margin="0,5,0,5"
-                                          />
+                            <customcontrols:BindablePasswordBox Password="{Binding Password}"
+                                                Height="28"
+                                               Margin="0,5,0,0" 
+                                                                >
+                            </customcontrols:BindablePasswordBox>
+                            
                             <StackPanel Orientation="Horizontal"
                                         Height="30"
                                         Margin="0 10 0 0">

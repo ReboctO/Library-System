@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\ww224\Desktop\Library-System\Libary-System\obj\Debug\net8.0-windows\
+C:\Users\User\Desktop\Library-System\Library-System\obj\Debug\net8.0-windows\
 Libary_System
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\ww224\Desktop\Library-System\Libary-System\App.xaml
-2376403462
+C:\Users\User\Desktop\Library-System\Library-System\App.xaml
+31361631829
 
-10-1991031002
-203699076642
-MainWindow.xaml;View\LoginView.xaml;
+111716194828
+2031722541046
+CustomControls\BindablePasswordBox.xaml;MainWindow.xaml;View\LoginView.xaml;
 
 False
 
