@@ -1,5 +1,9 @@
-﻿using System.Security;
+﻿using Libary_System.Models;
+using System.Security;
 using System.Windows.Input;
+using Libary_System.Repositories;
+using System.Net;
+using System.Security.Principal;
 
 namespace Libary_System.ViewModels
 {
@@ -10,6 +14,7 @@ namespace Libary_System.ViewModels
         private SecureString _password;
         private string _errorMessage;
         private bool _isViewVisible = true;
+        private IUserRepository _userRepository;
 
         //Properties
         public string UserName
@@ -62,6 +67,7 @@ namespace Libary_System.ViewModels
         // Constructor
         public LoginViewModel()
         {
+            _userRepository = new UserRepository();
             LoginCommand = new ViewModelCommand(ExecuteLoginCommand, CanExecuteLoginCommand);
             RecoverPasswordCommand = new ViewModelCommand(p => ExecuteRecoverPassCommand("", ""));
         }
@@ -69,13 +75,22 @@ namespace Libary_System.ViewModels
         //Login Validation
         private bool CanExecuteLoginCommand(object obj)
         {
-            //either nilang username kay whitespace, username length less than 3 characters hasta ang password moreturn false dili sya ma unable sya 
+            //if dili sya null ang password or username ug ang length nila each matrue sya makalogin;
             return !(string.IsNullOrWhiteSpace(UserName) || (UserName.Length < 3 || Password == null || Password.Length < 3));
 
         }
         private void ExecuteLoginCommand(object obj)
         {
-            throw new NotImplementedException();
+            var isValidUser = _userRepository.AuthenticateUser(new NetworkCredential(UserName,Password));
+            if (isValidUser)
+            {
+                Thread.CurrentPrincipal = new GenericPrincipal(new GenericIdentity(UserName),null);
+                IsViewVisible = false;
+            }
+            else
+            {
+                ErrorMessage = "*Invalid Username or Password";
+            }
         }
 
         private void ExecuteRecoverPassCommand(string username, string email)

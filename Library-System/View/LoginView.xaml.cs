@@ -20,7 +20,10 @@ namespace Libary_System.View
                 DragMove();
             }
         }
-
+        private void btnMinimize_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
+        }
 
     }
 }

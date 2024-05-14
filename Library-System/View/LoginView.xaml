@@ -1,11 +1,13 @@
 ﻿<Window x:Class="Libary_System.View.MainWindow"
+        Title="MainView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local ="clr-namespace:Libary_System.View"
-        xmlns:viewModels="clr-namespace:Libary_System.ViewModels" xmlns:customcontrols="clr-namespace:Libary_System.CustomControls"
+        xmlns:viewModels="clr-namespace:Libary_System.ViewModels"
+        xmlns:customcontrols="clr-namespace:Libary_System.CustomControls"
         mc:Ignorable="d"
         Height="645" 
         Width="875"
@@ -113,17 +115,7 @@
                         <StackPanel Orientation="Horizontal"
                                     Grid.Row="0"
                                     >
-                            <materialDesign:PackIcon 
-                                      Kind ="Minimize"
-                                      Width="20"
-                                      Height="20"
-                                      Opacity="0.3"
-                                      HorizontalAlignment="Center"
-                                      VerticalAlignment="center"
-                                      Background="#da34ae"
-                                BorderBrush="Black"
-                                BorderThickness="1"
-                                Margin="430,0,0,0"/>
+                     
                             <materialDesign:PackIcon 
                                         Kind ="Close"
                                         Width="20"

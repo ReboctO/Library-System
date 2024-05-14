@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 namespace Libary_System.Repositories
 {
    
-    public class RepositoryBase
+    public abstract class RepositoryBase
     {
         private readonly string _connectionString;
         public RepositoryBase()
@@ -17,7 +17,7 @@ namespace Libary_System.Repositories
         }
         protected SqlConnection GetConnection()
         {
-            return new SqlConnection();
+            return new SqlConnection(_connectionString);
         }
     }
-}
+}   
