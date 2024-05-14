@@ -6,7 +6,7 @@ namespace Libary_System.ViewModels
     public class LoginViewModel : ViewModelBase
     {
         //Fields 
-        private string _userName;
+        private string _userName = "UserName";
         private SecureString _password;
         private string _errorMessage;
         private bool _isViewVisible = true;
