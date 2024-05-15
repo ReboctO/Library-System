@@ -15,13 +15,15 @@ namespace Libary_System
         {
             var loginView = new MainWindow();
             loginView.Show();
-            //loginView.IsVisibleChanged += (s, ev) =>
-            //{
-            //    if (loginView.IsVisible == false && loginView.IsLoaded)
-            //    {
-                  
-            //    }
-            //};
+            loginView.IsVisibleChanged += (s, ev) =>
+            {
+                if (loginView.IsVisible == false && loginView.IsLoaded)
+                {
+                    var mainView = new MainView();
+                    mainView.Show();
+                    loginView.Close();
+                }
+            };
 
 
         }
