@@ -41,7 +41,7 @@
             <Border.BorderBrush>
                 <LinearGradientBrush StartPoint="0,0"
                              EndPoint="1,1">
-                    <GradientStop Color="#462ad8"
+                    <GradientStop Color="{StaticResource windowBorder1}"
                           Offset="0"/>
                     <GradientStop Color="#da34ae"
                           Offset="0.75"/>

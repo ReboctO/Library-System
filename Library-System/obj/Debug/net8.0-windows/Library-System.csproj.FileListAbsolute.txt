@@ -113,3 +113,6 @@ C:\Users\ww224\Desktop\Library-System\Library-System\bin\Debug\net8.0-windows\ru
 C:\Users\ww224\Desktop\Library-System\Library-System\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
 C:\Users\ww224\Desktop\Library-System\Library-System\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\ww224\Desktop\Library-System\Library-System\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ww224\Desktop\Library-System\Library-System\obj\Debug\net8.0-windows\Styles\UIColors.baml
+C:\Users\ww224\Desktop\Library-System\Library-System\obj\Debug\net8.0-windows\View\MainView.g.cs
+C:\Users\ww224\Desktop\Library-System\Library-System\obj\Debug\net8.0-windows\View\MainView.baml
